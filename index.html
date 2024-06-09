@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar bg-body-info navbar-dark d-none fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bolder">SMART LOGIN</a>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-warning" type="button">Logout</button>
+            </form>
+        </div>
+    </nav>
+    <section class="systemBox ">
+
+        <div class="container loginContainer my-5 text-center d-block">
+            <div class="signForm m-auto w-75 p-5">
+                <h1>Smart Login System</h1>
+                <form>
+
+                    <input id="loginEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+                    <div class="alert alert-danger d-none my-3 p-2">
+                        <small>Please enter a valid email (Example: Kerolos@gmail.com)</small>
+                    </div>
+                    <input id="loginPassword" class="form-control my-3" placeholder="Enter your password"
+                        type="password">
+                    <p class="text-danger" id="incorrectLogin"></p>
+                    <button type="button" class="btn btn-outline-info w-100 my-3 loginButton">Login</button>
+                </form>
+                <p class="text-white">Don’t have an account? <span class="signUpAnchor">Sign
+                        Up</span></p>
+            </div>
+        </div>
+        <div class="container signUpContainer my-5 text-center d-none">
+            <div class="signForm m-auto w-75 p-5">
+                <h1>Smart Login System</h1>
+                <form>
+                    <input id="signName" class="form-control my-3 " placeholder="Enter your name" type="text">
+                    <input id="signEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+                    <div class="alert alert-danger d-none my-3 p-2">
+                        <small>Please enter a valid email (Example: Kerolos@gmail.com)</small>
+                    </div>
+                    <input id="signPassword" class="form-control my-3" placeholder="Enter your password"
+                        type="password">
+                    <p class="text-danger" id="incorrectSignUp"></p>
+                    <button type="button" class="btn btn-outline-info w-100 my-3  signUpButton">Sign Up</button>
+
+                </form>
+                <p class="text-white ">You have an account? <span class="loginAnchor">Sign in
+                    </span></p>
+            </div>
+        </div>
+        <div class="container loggedInPage my-5 text-center d-none vh-100 justify-content-center align-items">
+            <div class="signForm m-auto w-75 p-5">
+                <h1></h1>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

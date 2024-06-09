@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #24353F;
+    font-family: "Titillium Web", sans-serif;
+}
+.navbar{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.navbar .container .navbar-brand {
+    cursor: pointer;
+}
+
+.signForm {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.signForm h1 {
+    color: #17a2b8;
+}
+
+.signForm form input,
+.signForm form input:focus {
+    background-color: transparent;
+    color: white;
+
+}
+
+.signForm form input:focus {
+    border: 1px solid #17a2b8;
+    box-shadow: unset;
+}
+
+.signForm form input::placeholder {
+    color: white;
+}
+
+.signForm p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
