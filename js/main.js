@@ -177,6 +177,6 @@ logout.addEventListener('click', logoutFunction)
 
 function logoutFunction() {
     navBar.classList.replace('d-flex', 'd-none')
-    loggedInSection.classList.replace('d-block', 'd-none')
+    loggedInSection.classList.replace('d-flex', 'd-none')
     displayLogin()
 }
